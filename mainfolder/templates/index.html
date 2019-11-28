@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>"X" Company Blog</h1>
+  {% if current_user.is_authenticated %}
+  <hr>
+  <h2 class="alert alert-success" role="alert">Welcome back  dear {{current_user.username}}! </h2>
+  <hr>
+  {%endif%}
+</div>
+
+{% endblock %}
